@@ -62,7 +62,7 @@ use Laravel\Fortify\TwoFactorAuthenticatable;
  * @property-read Collection<int, User> $following
  * @property-read Collection<int, User> $followers
  */
-final class User extends Authenticatable implements FilamentUser, MustVerifyEmail, Viewable
+final class User extends Authenticatable implements FilamentUser, Viewable
 {
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable, TwoFactorAuthenticatable;
