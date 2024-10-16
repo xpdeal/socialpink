@@ -24,10 +24,10 @@ final readonly class EnsureVerifiedEmailsForSignInUsers
 
         $user = type($request->user())->as(User::class);
 
-        if ($user->hasVerifiedEmail()) {
+       // if ($user->hasVerifiedEmail()) {
             return $next($request);
-        }
+        //}
 
-        return to_route('verification.notice');
+        //return to_route('verification.notice');
     }
 }
